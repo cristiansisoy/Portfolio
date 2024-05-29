@@ -1,0 +1,78 @@
+@font-face {
+    font-family: '';
+    src: url('MatissePro-UB-AlphaNum.eot');
+    src: url('MatissePro-UB-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-UB-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-UB-AlphaNum.woff') format('woff'),
+        url('MatissePro-UB-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-UB-AlphaNum.svg#MatissePro-UB-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('MatissePro-B-AlphaNum.eot');
+    src: url('MatissePro-B-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-B-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-B-AlphaNum.woff') format('woff'),
+        url('MatissePro-B-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-B-AlphaNum.svg#MatissePro-B-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('MatissePro-DB-AlphaNum.eot');
+    src: url('MatissePro-DB-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-DB-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-DB-AlphaNum.woff') format('woff'),
+        url('MatissePro-DB-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-DB-AlphaNum.svg#MatissePro-DB-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('MatissePro-EB-AlphaNum.eot');
+    src: url('MatissePro-EB-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-EB-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-EB-AlphaNum.woff') format('woff'),
+        url('MatissePro-EB-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-EB-AlphaNum.svg#MatissePro-EB-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('MatissePro-L-AlphaNum.eot');
+    src: url('MatissePro-L-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-L-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-L-AlphaNum.woff') format('woff'),
+        url('MatissePro-L-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-L-AlphaNum.svg#MatissePro-L-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('MatissePro-M-AlphaNum.eot');
+    src: url('MatissePro-M-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('MatissePro-M-AlphaNum.woff2') format('woff2'),
+        url('MatissePro-M-AlphaNum.woff') format('woff'),
+        url('MatissePro-M-AlphaNum.ttf') format('truetype'),
+        url('MatissePro-M-AlphaNum.svg#MatissePro-M-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

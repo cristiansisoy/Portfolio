@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'MatissePro';
+    src: url('fonts/MatissePro.eot');
+    src: url('fonts/MatissePro.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MatissePro.woff2') format('woff2'),
+        url('fonts/MatissePro.woff') format('woff'),
+        url('fonts/MatissePro.ttf') format('truetype'),
+        url('fonts/MatissePro.svg#svgFontName') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MatissePro';
+    src: url('fonts/MatissePro-Light.eot');
+    src: url('fonts/MatissePro-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MatissePro-Light.woff2') format('woff2'),
+        url('fonts/MatissePro-Light.woff') format('woff'),
+        url('fonts/MatissePro-Light.ttf') format('truetype'),
+        url('fonts/MatissePro-Light.svg#svgFontName') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MatissePro';
+    src: url('fonts/MatissePro-Bold.eot');
+    src: url('fonts/MatissePro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MatissePro-Bold.woff2') format('woff2'),
+        url('fonts/MatissePro-Bold.woff') format('woff'),
+        url('fonts/MatissePro-Bold.ttf') format('truetype'),
+        url('fonts/MatissePro-Bold.svg#svgFontName') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'MatissePro';
+}
+
+:root{
+    --background-color: #000000;
+    --primary-color: #ffffff;
+    --highlight-color: #A1513A;
+}
+
+body {
+    color: white;
+    background: url("img/bonfire2.png") center/cover fixed;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 720px;
+    position: relative;
+  }
+
+.window {
+    background-image: url('img/menu-bg.jpg');
+    background-size: contain;
+    background-color: #000000;
+    box-shadow: 5px 5px 6px #000000;
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+
+.window2 {
+    outline: double 5px #202020;
+    outline-offset: 30px;
+    background-color: black;
+    box-shadow: -6px -6px 40px 20px #000000, 6px 6px 40px 20px #000000;
+    width: 26%;
+    position: absolute;
+    left: 120px;
+    top: 150px;
+}
+
+.window-border {
+    position: relative;
+    padding: 3px;
+    box-shadow: inset -2px -2px 6px#31291E, inset 2px 2px 6px#31291E;
+}
+/*
+.window-outline {
+    position: absolute;
+    left: 85px;
+    top: 115px;
+    border: double 5px #202020;
+    width: 30%;
+    height: 65%;
+}*/
+
+.button-container {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    box-shadow: inset 0px 2px 6px#31291E;
+    padding-top: 2px;
+}
+
+.button {
+    font-size: 150%;
+	border: none;
+    color: white;
+    background-color: #00000000;
+    box-shadow: inset 0px -2px 6px #31291E, inset -10px 0px #000000, inset 10px 0px #000000;
+    width: 100%;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.content:hover {
+	background-color: #672713;
+    box-shadow: inset 0px -2px 6px #31291E, inset 3px 3px 5px #000000, inset -3px -3px 5px #000000;
+}
+
+.empty {
+    color: #000000;
+    cursor: initial;
+}
+
+.menu-button {
+    text-align: left;
+}
