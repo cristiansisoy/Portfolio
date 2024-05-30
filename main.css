@@ -80,7 +80,7 @@ p{
     position: relative;
 }
 
-.window {
+/*.window {
     background-image: url('img/menu-bg.jpg');
     background-size: contain;
     background-color: #000000;
@@ -89,9 +89,9 @@ p{
     position: absolute;
     left: 50px;
     top: 70px;
-}
+}*/
 
-.window2 {
+.window {
     outline: double 5px #202020;
     outline-offset: 30px;
     background-color: black;
@@ -147,4 +147,13 @@ p{
 
 .menu-button {
     text-align: left;
+}
+
+.window.container {
+
+}
+
+#win1, #win2, #win3 {
+    display: none;
+    z-index: 1;
 }

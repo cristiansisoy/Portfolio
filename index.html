@@ -18,10 +18,10 @@
         
         <div class="menu" id="menu">
             <div class="window-outline"></div>
-            <div class="window2">
+            <div class="window">
                 <div class="window-border">
                     <div class="button-container unselectable" onclick="audio.play()">
-                        <p><button class="button menu-button content">Info</button></p>
+                        <p><button class="button menu-button content" id="btn1" onclick="openFolder2(btn1)">Info</button></p>
                         <p><button class="button menu-button content">Proyectos</button></p> 
                         <p><button class="button menu-button content">Contacto</button></p>
                         
@@ -33,12 +33,20 @@
                         <p><button class="button menu-button empty" disabled>a</button></p>
                         <p><button class="button menu-button empty" disabled>a</button></p>
                         <p><button class="button menu-button empty" disabled>a</button></p>
-    
+                        
                         <audio src="audio/select.mp3" id="select" preload="auto"></audio>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="window-container">
+            <div id="win1">
+                <img class="center" src="img/knight.jpg" alt="knight">
+            </div>
+        </div>
+
+
     </div>
     
     <script>

@@ -30,6 +30,12 @@ function openFolder(folder){
         document.getElementById(winId.replace('win', 'icon')).src = 'img/directory_closed_cool-0.png';
     }
 }
+
+function openFolder2(button) {
+    let winId = button.id.replace('btn', 'win');
+    document.getElementById(winId).style.display = "block";
+}
+
 function closeFolder(closeButton){
     let winId = closeButton.parentNode.parentNode.parentNode.id;
     let folderId = winId.replace('win', 'icon');
