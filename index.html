@@ -16,33 +16,53 @@
         </div> -->
         
         
-        <div class="menu" id="menu">
-            <div class="window-outline"></div>
-            <div class="window">
-                <div class="window-border">
-                    <div class="button-container unselectable" onclick="audio.play()">
-                        <p><button class="button menu-button content" id="btn1" onclick="openFolder2(btn1)">Info</button></p>
-                        <p><button class="button menu-button content">Proyectos</button></p> 
-                        <p><button class="button menu-button content">Contacto</button></p>
-                        
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        <p><button class="button menu-button empty" disabled>a</button></p>
-                        
-                        <audio src="audio/select.mp3" id="select" preload="auto"></audio>
-                    </div>
+        <div class="window">
+            <div class="window-border">
+                <div class="button-container unselectable" onclick="audio.play()">
+                    <p><button class="button menu-button content" id="btn1" onclick="openFolder2(btn1)">Info</button></p>
+                    <p><button class="button menu-button content">Proyectos</button></p> 
+                    <p><button class="button menu-button content">Contacto</button></p>
+                    
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    <p><button class="button menu-button empty" disabled>a</button></p>
+                    
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
                 </div>
             </div>
         </div>
 
         <div class="window-container">
-            <div id="win1">
-                <img class="center" src="img/knight.jpg" alt="knight">
+            <div class="window2" id="win1">
+                <div class="title-bar">
+                    <div class="title-bar-text">
+                        <img src="img/info-icon.jpg" alt="Info Icon" class="stick">
+                        <div class="text-container stick unselectable">
+                            <div class="text1">
+                                Subir de nivel
+                            </div>
+                            <div class="text2">
+                                Seleccionar atributo para mejorar
+                            </div>
+                            <div class="title-bar-padding">a</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="window-body">
+                    
+                </div>
+                
+                <div class="button-container ok-button center unselectable" onclick="audio.play()">
+                    <p><button class="button content" onclick="closeFolder2(btn1)">Aceptar</button></p>
+
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
+                </div>
             </div>
         </div>
 

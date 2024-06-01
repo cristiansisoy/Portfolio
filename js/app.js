@@ -36,6 +36,11 @@ function openFolder2(button) {
     document.getElementById(winId).style.display = "block";
 }
 
+function closeFolder2(button) {
+    let winId = button.id.replace('btn', 'win');
+    document.getElementById(winId).style.display = "none";
+}
+
 function closeFolder(closeButton){
     let winId = closeButton.parentNode.parentNode.parentNode.id;
     let folderId = winId.replace('win', 'icon');
