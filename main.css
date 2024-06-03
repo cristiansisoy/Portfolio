@@ -37,6 +37,24 @@
     font-display: swap;
 }
 
+@media (max-width: 1400px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 5px;
+    }
+}
+
 * {
     font-family: 'MatissePro';
 }
@@ -44,14 +62,14 @@
 :root{
     --background-color: #000000;
     --primary-color: #ffffff;
-    --highlight-color: #A1513A;
+    --highlight-color: #672713;
 }
 
 body {
     color: white;
     background: url("img/bonfire2.png") center/cover fixed;
-    background-size: auto 100%;
     background-repeat: no-repeat;
+    background-size: auto 100%;
     background-color: var(--background-color);
     margin: 0;
     height: 100vh;
@@ -59,7 +77,6 @@ body {
 }
 
 p{
-    font-size: 18px;
     margin: 0;
 }
 
@@ -93,10 +110,10 @@ p{
     outline: double 5px #202020;
     outline-offset: 30px;
     background-color: black;
-    width: 26%;
+    width: 26vw;
     position: absolute;
-    left: 120px;
-    top: 150px;
+    left: 8vw;
+    top: 20vh;
 }
 
 .window-border {
@@ -115,14 +132,14 @@ p{
 }*/
 
 .button-container {
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 3vh;
+    margin-bottom: 0.7vh;
     box-shadow: inset 0px 2px 6px#31291E;
-    padding-top: 2px;
+    padding-top: 0.3vh;
 }
 
 .button {
-    font-size: 150%;
+    font-size: 2.7rem;
 	border: none;
     color: white;
     background-color: #00000000;
@@ -146,16 +163,12 @@ p{
     text-align: left;
 }
 
-.button-container.ok-button {
-    width: 35%;
-}
-
 .window-container {
-    width: 30%;
-    height: 70%;
+    width: 33vw;
+    height: 70vh;
     position: absolute;
-    right: 100px;
-    top: 120px;
+    right: 3vw;
+    top: 15vh;
 }
 
 .window2 {
@@ -173,18 +186,39 @@ p{
     display: inline-block;
 }
 
+.title-bar-text {
+    width: 100%;
+}
+
+.text-container {
+    width: 81%;
+}
+
 .text1 {
-    margin-bottom: 0px;
-    font-size: 30px;
-    border-bottom: double 4px rgb(51, 47, 44);
+    font-size: 3rem;
+    border-bottom: double 4px #332f2c;
 }
 
 .text2 {
-    font-size: 20px;
+    font-size: 2rem;
     box-shadow: 0px 3px 3px #584330;
 }
 
 .title-bar-padding {
-    font-size: 10px;
+    font-size: 1rem;
     color: #000000;
+}
+
+.window-body {
+    width: 100%;
+    height: 80%;
+    border-bottom: double 4px #332f2c;
+}
+
+.button-container.ok-button {
+    width: 35%;
+    margin-top: 1.5vh;
+    margin-bottom: 0px;
+    padding-top: 0.6vh;
+    box-shadow: inset 0px 2px 6px #31291E;
 }
