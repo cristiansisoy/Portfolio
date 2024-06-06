@@ -14,11 +14,11 @@
         <div class="window">
             <div class="window-border">
                 <div class="button-container unselectable" onclick="audio.play()">
-                    <p><button class="button menu-button content" id="btn1" onclick="openFolder2(btn1)">Info</button></p>
-                    <p><button class="button menu-button content">Proyectos</button></p> 
-                    <p><button class="button menu-button content">Contacto</button></p>
+                    <p><button class="button menu-button content" id="btn1" onclick="openFolder(btn1)">About Me</button></p>
+                    <p><button class="button menu-button content" id="btn2" onclick="openFolder(btn2)">Projects</button></p> 
+                    <p><button class="button menu-button content" id="btn3" onclick="openFolder(btn3)">Knowledge</button></p>
+                    <p><button class="button menu-button content" id="btn4" onclick="openFolder(btn4)">Contact Me</button></p>
                     
-                    <p><button class="button menu-button empty" disabled>a</button></p>
                     <p><button class="button menu-button empty" disabled>a</button></p>
                     <p><button class="button menu-button empty" disabled>a</button></p>
                     <p><button class="button menu-button empty" disabled>a</button></p>
@@ -35,14 +35,14 @@
         <div class="window-container">
             <div class="window2" id="win1">
                 <div class="title-bar">
-                    <div class="title-bar-text">
-                        <img src="img/info-icon.jpg" alt="Info Icon" class="stick">
+                    <div class="title-bar-text" style="display: flex;">
+                        <img src="img/info-icon.jpg" alt="Info Icon" class="icon stick">
                         <div class="text-container stick unselectable">
                             <div class="text1">
-                                Subir de nivel
+                                About Me
                             </div>
                             <div class="text2">
-                                Seleccionar atributo para mejorar
+                                A few words about who I am
                             </div>
                             <div class="title-bar-padding">a</div>
                         </div>
@@ -50,15 +50,97 @@
                 </div>
                 
                 <div class="window-body">
-                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum quidem delectus consequuntur, ea, porro quaerat suscipit necessitatibus in ut sequi error, quo minima dolor. Commodi debitis iste ipsa sunt.</p>
                 </div>
                 
                 <footer class="button-container ok-button center unselectable" onclick="audio.play()">
-                    <p><button class="button content" onclick="closeFolder2(btn1)">Aceptar</button></p>
+                    <p><button class="button content" onclick="closeFolder(btn1)">Aceptar</button></p>
 
                     <audio src="audio/select.mp3" id="select" preload="auto"></audio>
                 </footer>
             </div>
+
+            <div class="window2" id="win2">
+                <div class="title-bar">
+                    <div class="title-bar-text" style="display: flex;">
+                        <img src="img/projects-icon.jpg" alt="Info Icon" class="icon stick">
+                        <div class="text-container stick unselectable">
+                            <div class="text1">
+                                Projects
+                            </div>
+                            <div class="text2">
+                                Things I've worked on
+                            </div>
+                            <div class="title-bar-padding">a</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="window-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero maiores architecto ratione, labore magni unde porro autem aspernatur, ut dolores voluptatem officiis eveniet tenetur recusandae magnam, hic dolor. Impedit?</p>
+                </div>
+                
+                <footer class="button-container ok-button center unselectable" onclick="audio.play()">
+                    <p><button class="button content" onclick="closeFolder(btn2)">Aceptar</button></p>
+
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
+                </footer>
+            </div>
+
+            <div class="window2" data-window="" id="win3">
+                <div class="title-bar">
+                    <div class="title-bar-text" style="display: flex;">
+                        <img src="img/knowledge-icon.jpg" alt="Info Icon" class="icon stick">
+                        <div class="text-container stick unselectable">
+                            <div class="text1">
+                                Knowledge
+                            </div>
+                            <div class="text2">
+                                What I've learned over the years
+                            </div>
+                            <div class="title-bar-padding">a</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="window-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio velit maiores non beatae nam esse voluptates natus. Itaque, expedita obcaecati nobis suscipit ad sed temporibus laborum nam ratione repellat neque!</p>
+                </div>
+                
+                <footer class="button-container ok-button center unselectable" onclick="audio.play()">
+                    <p><button class="button content" onclick="closeFolder(btn3)">Aceptar</button></p>
+
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
+                </footer>
+            </div>
+
+            <div class="window2" data-window="" id="win4">
+                <div class="title-bar">
+                    <div class="title-bar-text" style="display: flex;">
+                        <img src="img/contact-icon.jpg" alt="Info Icon" class="icon stick">
+                        <div class="text-container stick unselectable">
+                            <div class="text1">
+                                Contact Me
+                            </div>
+                            <div class="text2">
+                                Use this space to  send me an email
+                            </div>
+                            <div class="title-bar-padding">a</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="window-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur officia laboriosam ea labore recusandae vitae modi quisquam soluta, non quasi dolorem maxime laudantium fuga eaque voluptates placeat repellendus veritatis consequuntur!</p>
+                </div>
+                
+                <footer class="button-container ok-button center unselectable" onclick="audio.play()">
+                    <p><button class="button content" onclick="closeFolder(btn4)">Aceptar</button></p>
+
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
+                </footer>
+            </div>
+
         </div>
 
 

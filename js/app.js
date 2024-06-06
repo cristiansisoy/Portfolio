@@ -12,7 +12,7 @@ function start(){
 function highlight(div){
     div.style.backgroundColor = 'gray';
 }
-function openFolder(folder){
+function openFolder2(folder){
     //Draggable window
     $( ".window" ).draggable({ handle: ".title-bar" });
 
@@ -31,17 +31,23 @@ function openFolder(folder){
     }
 }
 
-function openFolder2(button) {
+function openFolder(button) {
+    const winarr = ["win1", "win2", "win3", "win4"];
+
+    winarr.forEach(window => {
+        document.getElementById(window).style.display = "none";
+    });
+    
     let winId = button.id.replace('btn', 'win');
     document.getElementById(winId).style.display = "block";
 }
 
-function closeFolder2(button) {
+function closeFolder(button) {
     let winId = button.id.replace('btn', 'win');
     document.getElementById(winId).style.display = "none";
 }
 
-function closeFolder(closeButton){
+function closeFolder2(closeButton){
     let winId = closeButton.parentNode.parentNode.parentNode.id;
     let folderId = winId.replace('win', 'icon');
     document.getElementById(winId).style.display = "none";
