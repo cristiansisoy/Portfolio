@@ -15,8 +15,8 @@
             <div class="window-border">
                 <div class="button-container unselectable" onclick="audio.play()">
                     <p><button class="button menu-button content" id="btn1" onclick="openFolder(btn1)">About Me</button></p>
-                    <p><button class="button menu-button content" id="btn2" onclick="openFolder(btn2)">Projects</button></p> 
-                    <p><button class="button menu-button content" id="btn3" onclick="openFolder(btn3)">Knowledge</button></p>
+                    <p><button class="button menu-button content" id="btn2" onclick="openFolder(btn2)">Knowledge</button></p> 
+                    <p><button class="button menu-button content" id="btn3" onclick="openFolder(btn3)">Projects</button></p>
                     <p><button class="button menu-button content" id="btn4" onclick="openFolder(btn4)">Contact Me</button></p>
                     
                     <p><button class="button menu-button empty" disabled>a</button></p>
@@ -34,7 +34,7 @@
 
         <div class="window-container">
             <div class="window2" id="win1">
-                <div class="title-bar">
+                <div class="title-bar unselectable">
                     <div class="title-bar-text" style="display: flex;">
                         <img src="img/info-icon.jpg" alt="Info Icon" class="icon stick">
                         <div class="text-container stick unselectable">
@@ -50,7 +50,21 @@
                 </div>
                 
                 <div class="window-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum quidem delectus consequuntur, ea, porro quaerat suscipit necessitatibus in ut sequi error, quo minima dolor. Commodi debitis iste ipsa sunt.</p>
+                    <p>
+                        Hi there, my name is Cristian. I've been studying computer science for the last couple of years at university, and also delved a bit into videogame development on my own.
+                        <br>
+                        The main reason I got into this is the ability to take any idea I have and see it slowly turn into something I can share with other people.
+                        <br>
+                        I've also studied some chemical engineering, and like learning languages.
+                        <br><br>
+                        You can find me at these sites:
+                        <br>
+                        LinkedIn:
+                        <a href="https://www.linkedin.com/in/cristianriverosale/" target="_blank">cristianriverosale</a>
+                        <br>
+                        GitHub:
+                        <a href="https://github.com/cristiansisoy" target="_blank">cristiansisoy</a>
+                    </p>
                 </div>
                 
                 <footer class="button-container ok-button center unselectable" onclick="audio.play()">
@@ -61,7 +75,81 @@
             </div>
 
             <div class="window2" id="win2">
-                <div class="title-bar">
+                <div class="title-bar unselectable">
+                    <div class="title-bar-text" style="display: flex;">
+                        <img src="img/knowledge-icon.jpg" alt="Info Icon" class="icon stick">
+                        <div class="text-container stick unselectable">
+                            <div class="text1">
+                                Knowledge
+                            </div>
+                            <div class="text2">
+                                What I've learnt over the years
+                            </div>
+                            <div class="title-bar-padding">a</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="window-body unselectable">
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/c.png" alt="C" class="project-icon">
+                            <p class="icon-title unselectable">C</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/c++.png" alt="C++" class="project-icon">
+                            <p class="icon-title unselectable">C++</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/java.png" alt="Java" class="project-icon">
+                            <p class="icon-title unselectable">Java</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/python.png" alt="Python" class="project-icon">
+                            <p class="icon-title unselectable">Python</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/postgresql.png" alt="PostgreSQL" class="project-icon">
+                            <p class="icon-title unselectable">PostgreSQL</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/unity.png" alt="Unity" class="project-icon">
+                            <p class="icon-title unselectable">Unity</p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="icon-spot">
+                            <img src="img/godot.png" alt="Godot" class="project-icon">
+                            <p class="icon-title unselectable">Godot</p>
+                        </div>
+                    </p>
+                </div>
+                
+                <footer class="button-container ok-button center unselectable" onclick="audio.play()">
+                    <p><button class="button content" onclick="closeFolder(btn2)">Aceptar</button></p>
+
+                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
+                </footer>
+            </div>
+
+            <div class="window2" data-window="" id="win3">
+                <div class="title-bar unselectable">
                     <div class="title-bar-text" style="display: flex;">
                         <img src="img/projects-icon.jpg" alt="Info Icon" class="icon stick">
                         <div class="text-container stick unselectable">
@@ -77,34 +165,21 @@
                 </div>
                 
                 <div class="window-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero maiores architecto ratione, labore magni unde porro autem aspernatur, ut dolores voluptatem officiis eveniet tenetur recusandae magnam, hic dolor. Impedit?</p>
-                </div>
-                
-                <footer class="button-container ok-button center unselectable" onclick="audio.play()">
-                    <p><button class="button content" onclick="closeFolder(btn2)">Aceptar</button></p>
-
-                    <audio src="audio/select.mp3" id="select" preload="auto"></audio>
-                </footer>
-            </div>
-
-            <div class="window2" data-window="" id="win3">
-                <div class="title-bar">
-                    <div class="title-bar-text" style="display: flex;">
-                        <img src="img/knowledge-icon.jpg" alt="Info Icon" class="icon stick">
-                        <div class="text-container stick unselectable">
-                            <div class="text1">
-                                Knowledge
+                    <p>
+                        <a href="https://github.com/cristiansisoy/Vogel-s-Approximation-Method" target="_blank">
+                            <div class="icon-spot">
+                                <img src="img/truck.png" alt="Vogel Icon" class="project-icon">
+                                <p class="icon-title unselectable">Vogel's Method</p>
                             </div>
-                            <div class="text2">
-                                What I've learned over the years
+                        </a>
+
+                        <a href="img/proyectos.jpg" target="_blank">
+                            <div class="icon-spot">
+                                <img src="img/blankpage.png" alt="Nothing" class="project-icon">
+                                <p class="icon-title unselectable">.</p>
                             </div>
-                            <div class="title-bar-padding">a</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="window-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio velit maiores non beatae nam esse voluptates natus. Itaque, expedita obcaecati nobis suscipit ad sed temporibus laborum nam ratione repellat neque!</p>
+                        </a>
+                    </p>
                 </div>
                 
                 <footer class="button-container ok-button center unselectable" onclick="audio.play()">
@@ -115,7 +190,7 @@
             </div>
 
             <div class="window2" data-window="" id="win4">
-                <div class="title-bar">
+                <div class="title-bar unselectable">
                     <div class="title-bar-text" style="display: flex;">
                         <img src="img/contact-icon.jpg" alt="Info Icon" class="icon stick">
                         <div class="text-container stick unselectable">
@@ -131,7 +206,9 @@
                 </div>
                 
                 <div class="window-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur officia laboriosam ea labore recusandae vitae modi quisquam soluta, non quasi dolorem maxime laudantium fuga eaque voluptates placeat repellendus veritatis consequuntur!</p>
+                    <p>
+                        Feature incoming!
+                    </p>
                 </div>
                 
                 <footer class="button-container ok-button center unselectable" onclick="audio.play()">

@@ -65,6 +65,10 @@
     --highlight-color: #672713;
 }
 
+::selection {
+    background: var(--highlight-color);
+}
+
 body {
     color: white;
     background: url("img/bonfire2.png") center/cover fixed;
@@ -217,6 +221,8 @@ p{
     height: 80%;
     border-bottom: double 4px #332f2c;
     font-size: 2rem;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .button-container.ok-button {
@@ -229,4 +235,38 @@ p{
 
 .icon {
     flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #dcc963;
+}
+
+a:hover {
+    color: #672713;
+    background: none;
+}
+
+a:hover::selection {
+    color: #524f4e;
+}
+
+.icon-spot {
+    width: 6.4rem;
+    height: 6.4rem;
+    text-align: center;
+    border: solid 1px #fff0;
+    margin: 10px;
+    padding: 10px;
+}
+
+.icon-title {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.project-icon {
+    height: 100%;
+    width: 100%;
 }
