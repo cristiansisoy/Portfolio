@@ -31,21 +31,7 @@ function openFolder2(folder){
     }
 }
 
-function openFolder(button) {
-    const winarr = ["win1", "win2", "win3", "win4"];
 
-    winarr.forEach(window => {
-        document.getElementById(window).style.display = "none";
-    });
-    
-    let winId = button.id.replace('btn', 'win');
-    document.getElementById(winId).style.display = "block";
-}
-
-function closeFolder(button) {
-    let winId = button.id.replace('btn', 'win');
-    document.getElementById(winId).style.display = "none";
-}
 
 function closeFolder2(closeButton){
     let winId = closeButton.parentNode.parentNode.parentNode.id;
