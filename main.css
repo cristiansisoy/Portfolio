@@ -55,6 +55,13 @@
     }
 }
 
+@media (max-height: 700px) {
+    textarea.input {
+        height: 8rem;
+        max-height: 8rem;
+    }
+}
+
 @media (max-width: 500px) {
     html {
         font-size: 5px;
@@ -105,42 +112,6 @@ p{
     margin-right: auto;
 }
 
-/*.window {
-    background-image: url('img/menu-bg.jpg');
-    background-size: contain;
-    background-color: #000000;
-    box-shadow: 5px 5px 6px #000000;
-    width: 35%;
-    position: absolute;
-    left: 50px;
-    top: 70px;
-}*/
-
-.window {
-    outline: double 5px #202020;
-    outline-offset: 30px;
-    background-color: black;
-    width: 26vw;
-    position: absolute;
-    left: 8vw;
-    top: 20vh;
-}
-
-.window-border {
-    position: relative;
-    padding: 3px;
-    box-shadow: inset -2px -2px 6px#31291E, inset 2px 2px 6px#31291E;
-}
-/*
-.window-outline {
-    position: absolute;
-    left: 85px;
-    top: 115px;
-    border: double 5px #202020;
-    width: 30%;
-    height: 65%;
-}*/
-
 .button-container {
     margin-top: 3vh;
     margin-bottom: 0.7vh;
@@ -173,6 +144,24 @@ p{
     text-align: left;
 }
 
+/*-----------WINDOWS----------*/
+
+.window {
+    outline: double 5px #202020;
+    outline-offset: 30px;
+    background-color: black;
+    width: 26vw;
+    position: absolute;
+    left: 8vw;
+    top: 20vh;
+}
+
+.window-border {
+    position: relative;
+    padding: 3px;
+    box-shadow: inset -2px -2px 6px#31291E, inset 2px 2px 6px#31291E;
+}
+
 .window-container {
     width: 33vw;
     height: 70vh;
@@ -185,6 +174,18 @@ p{
     background-color: black;
     width: 100%;
     height: 100%;
+}
+
+.window-body {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow: hidden;
+    border-bottom: double 4px #332f2c;
+    font-size: 2rem;
+    flex-flow: wrap;
+    padding: 0.1rem;
+    box-sizing: border-box;
 }
 
 #win1, #win2, #win3, #win4, #win5 {
@@ -222,15 +223,6 @@ p{
     color: #000000;
 }
 
-.window-body {
-    width: 100%;
-    height: 80%;
-    border-bottom: double 4px #332f2c;
-    font-size: 2rem;
-    display: flex;
-    flex-flow: wrap;
-}
-
 .button-container.ok-button {
     width: 35%;
     margin-top: 1.5vh;
@@ -257,6 +249,7 @@ a:hover::selection {
     color: #524f4e;
 }
 
+/*----------ICONS----------*/
 .icon-spot {
     width: 6.4rem;
     height: 6.4rem;
@@ -264,6 +257,15 @@ a:hover::selection {
     border: solid 1px #fff0;
     margin: 10px;
     padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-icon {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .icon-title {
@@ -272,15 +274,18 @@ a:hover::selection {
     color: #ffffff;
 }
 
-.project-icon {
-    height: 100%;
+/*----------FORM----------*/
+.contact-form {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .form-input-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
 }
 
 .form-input-container label {
@@ -290,6 +295,12 @@ a:hover::selection {
 .input, .input-btn {
     font-size: 2rem;
     font-family: inherit;
+}
+
+textarea.input {
+    resize: none;
+    height: 12rem;
+    max-height: 12rem;
 }
 
 .style-box {
