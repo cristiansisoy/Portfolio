@@ -76,6 +76,8 @@
     --background-color: #000000;
     --primary-color: #ffffff;
     --highlight-color: #672713;
+    --error-color: #ED4337;
+    --correct-color: rgb(39, 255, 1);
 }
 
 ::selection {
@@ -136,7 +138,7 @@ p{
 
 .window-container {
     width: 33vw;
-    height: 70vh;
+    height: 75vh;
     position: absolute;
     right: 3vw;
     top: 15vh;
@@ -257,10 +259,11 @@ a:hover::selection {
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
+    margin: 1%;
 }
 
 .form-input-container {
-    width: 100%;
+    width: 90%;
 }
 
 .form-input-container label {
@@ -286,6 +289,15 @@ textarea.input {
     box-shadow: inset 0px -2px 6px #31291E, inset -10px 0px #000000, inset 10px 0px #000000;
     width: 100%;
     margin: 0px;
+}
+
+.correct-message {
+    color: var(--correct-color);
+    padding-left: 10px;
+}
+.error-message {
+    color: var(--error-color);
+    padding-left: 10px;
 }
 
 /*----------BUTTONS----------*/
