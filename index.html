@@ -68,7 +68,7 @@
                         <a href="https://github.com/cristiansisoy" target="_blank">cristiansisoy</a>
                         <br>
                         Itch.io:
-                        <a href="https://cristiansisoy.itch.io/" target="_blank">cristiansisoy</a>
+                        <a href="https://cristiansisoy.itch.io/">cristiansisoy</a>
                     </p>
                 </div>
                 
@@ -178,7 +178,7 @@
                             </div>
                         </a>
 
-                        <a href="https://cristiansisoy.itch.io/help-me-breathe" target="_blank">
+                        <a href="https://cristiansisoy.itch.io/help-me-breathe">
                             <div class="icon-spot">
                                 <img src="img/help-me-breathe.png" alt="HelpMeBreathe!" class="project-icon">
                                 <p class="icon-title unselectable">Help Me Breathe!</p>
@@ -218,27 +218,25 @@
                 </div>
                 
                 <div class="window-body">
-                    <form class="contact-form" id="contact-form" novalidate>
+                    <form class="contact-form">
                         <div class="form-input-container">
-                            <label for="name">Name</label>
-                            <input class="style-box input" type="text" id="full-name" placeholder="John" required>
+                            <label for="first-name">Name</label>
+                            <input class="style-box input" type="text" name="fst-name" id="full-name" autocomplete="given-name" placeholder="John" required>
                         </div>
                         <div class="form-input-container">
                             <label for="email">E-mail</label>
-                            <span class="error-message" id="invalidMail" style="display: none;">Invalid Email</span>
-                            <span class="correct-message" id="validMail" style="display: none;">Valid Email</span>
-                            <input class="style-box input" type="email" id="email" placeholder="example@email.com" required>
+                            <input class="style-box input" type="email" name="email" id="email" autocomplete="email" placeholder="example@email.com" required>
                         </div>
                         <div class="form-input-container">
                             <label for="message">Message</label>
-                            <textarea class="style-box input" id="message" placeholder="Leave your message here" required></textarea>
+                            <textarea class="style-box input" name="message" id="message" rows="5" placeholder="Leave your message here" required></textarea>
                         </div>
                     </form>
                 </div>
                 
                 <footer onclick="audio.play()" style="display: flex; justify-content: space-around;">
                     <div class="button-container ok-button center unselectable form-input-container" style="width: 35%;">
-                        <button class="button content" type="submit" onclick="sendMail()">Send</button>
+                        <input class="button content" type="submit" value="Send" onclick="sendMail()">
                     </div>
                     <div class="button-container ok-button center unselectable" style="width: 35%;">
                         <button class="button content" onclick="closeFolder(btn4)">OK</button>
@@ -259,81 +257,63 @@
             
         </div>
     </div>
-</body>
 
-<script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
     
-<script>
-    //Audio Player
-    var select = $("#select")[0];
-    $(".button.content").mouseenter(function() {
-        select.play()
-    });
-
-    const audio = new Audio();
-    audio.src = "audio/ok.mp3";
-
-    //Open Windows
-    function openFolder(button) {
-        const winarr = ["win1", "win2", "win3", "win4", "win5"];
-
-        winarr.forEach(window => {
-            document.getElementById(window).style.display = "none";
+    <script>
+        //Audio Player
+        var select = $("#select")[0];
+        $(".button.content").mouseenter(function() {
+            select.play()
         });
+
+        const audio = new Audio();
+        audio.src = "audio/ok.mp3";
+
+        //Open Windows
+        function openFolder(button) {
+            const winarr = ["win1", "win2", "win3", "win4", "win5"];
+
+            winarr.forEach(window => {
+                document.getElementById(window).style.display = "none";
+            });
             
-        let winId = button.id.replace('btn', 'win');
-        document.getElementById(winId).style.display = "block";
-    }
+            let winId = button.id.replace('btn', 'win');
+            document.getElementById(winId).style.display = "block";
+        }
 
-    //Close Windows
-    function closeFolder(button) {
-        let winId = button.id.replace('btn', 'win');
-        document.getElementById(winId).style.display = "none";
-    }
+        //Close Windows
+        function closeFolder(button) {
+            let winId = button.id.replace('btn', 'win');
+            document.getElementById(winId).style.display = "none";
+        }
 
-    //Send Email
-    function sendMail() {
-        const form = document.getElementById('contact-form');
-        const emailInput = document.getElementById('email');
-        const invalidMail = document.getElementById('invalidMail');
-        const validMail = document.getElementById('validMail');
+        //Send Email
+        function sendMail() {
+            
+            emailjs.init({publicKey: 'pwzQUubEhmAITgwjc'});
 
-        emailjs.init({publicKey: 'pwzQUubEhmAITgwjc'});
+            var templateParams = {
+                name: document.getElementById("full-name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
 
-        var templateParams = {
-            name: document.getElementById("full-name").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        };
-
-        // Reset messages
-        invalidMail.style.display = 'none';
-        validMail.style.display = 'none';
-
-        const email = emailInput.value;
-        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-        if (!isValidEmail) {
-            invalidMail.style.display = 'inline';
-        } else {
-            validMail.style.display = 'inline';
-
-            // Send email using EmailJS
             emailjs.send('service_7hbm7on', 'template_jim1h15', templateParams).then(
-                (response) => {
-                    console.log('SUCCESS!', response.status, response.text);
-                    openFolder(btn5);
-                    invalidMail.style.display = 'none';
-                    validMail.style.display = 'none';
-                },
-                (error) => {
-                    console.log('FAILED...', error);
-                },
+            (response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                openFolder(btn5);
+            },
+            (error) => {
+                console.log('FAILED...', error);
+            },
             );
         }
-    }
-</script>
+    </script>
+    
+</body>
 </html>
